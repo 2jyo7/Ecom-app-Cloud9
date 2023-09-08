@@ -9,31 +9,31 @@ const Trusted = () => {
           {/* my 1st img  */}
           <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png"
+              src="https://dypdvfcjkqkg2.cloudfront.net/original/4231996-6926.png"
               alt="trusted-brands"
             />
           </div>
           <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png"
+              src="https://tse4.mm.bing.net/th?id=OIP.cn5bhfduaORzA8XeyKkMaAHaFS&pid=Api&P=0&h=180"
               alt="trusted-brands"
             />
           </div>
           <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png"
+              src="https://tse1.mm.bing.net/th?id=OIP.H6dnSOVlq9p8PYBJvs0x3wHaHa&pid=Api&P=0&h=180"
               alt="trusted-brands"
             />
           </div>
           <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image6.png"
+              src="https://tse2.mm.bing.net/th?id=OIP.qWJlEJMTwDJYOGtNVMwUgAHaHa&pid=Api&P=0&h=180"
               alt="trusted-brands"
             />
           </div>
           <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image8.png"
+              src="https://tse1.mm.bing.net/th?id=OIP.PULf2nWr9PoTd67_tdyubgHaEo&pid=Api&P=0&h=180"
               alt="trusted-brands"
             />
           </div>

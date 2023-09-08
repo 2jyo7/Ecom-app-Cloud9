@@ -46,7 +46,7 @@ export const FilterContextProvider = ({ children }) => {
       value = event.target.value;
     }
 
-    return dispatch({ type: "UPDATE_FILTERS_VALUE", payload: { name, value } });
+    return dispatch({ type: "UPDATE_FILTERS_VALUE", payload: { name, value,  } });
   };
 
   // to sort the product

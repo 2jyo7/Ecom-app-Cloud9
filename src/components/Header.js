@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <MainHeader>
       <NavLink to="/">
-        <img src="./images/logo.png" alt="my logo img" />
+        <img src="https://logowik.com/content/uploads/images/cloud95518.jpg"
+         alt="my logo img" 
+         className="logo"/>
       </NavLink>
       <Nav />
     </MainHeader>
@@ -24,7 +26,9 @@ const MainHeader = styled.header`
   position: relative;
 
   .logo {
-    height: 5rem;
+    height: 9rem;
+    border-radius: 5%;
+    width: 150%;
   }
 `;
 export default Header;

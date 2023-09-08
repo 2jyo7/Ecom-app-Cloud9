@@ -18,14 +18,14 @@ const HeroSection = ({ myData }) => {
               animi! Suscipit sapiente.
             </p>
             <NavLink>
-              <Button>show now</Button>
+              <Button>shop now</Button>
             </NavLink>
           </div>
           {/* our homepage image  */}
           <div className="hero-section-image">
             <figure>
               <img
-                src="images/hero.jpg"
+                src="https://wallpaperaccess.com/full/1624847.jpg"
                 alt="hero-sect"
                 className="img-style"
               />
