@@ -13,6 +13,10 @@ const initialState = {
     text: "",
     category: "all",
     company: "all",
+    color: "all",
+    maxPrice: 0,
+    price: 0,
+    minPrice: 0,
   },
 };
 
@@ -42,12 +46,15 @@ export const FilterContextProvider = ({ children }) => {
     let name = event.target.name;
     let value = event.target.value;
 
-    if (name === "company") {
-      value = event.target.value;
-    }
-
-    return dispatch({ type: "UPDATE_FILTERS_VALUE", payload: { name, value,  } });
+    return dispatch({ type: "UPDATE_FILTERS_VALUE", payload: { name, value } });
   };
+
+ 
+  const clearFilters = () => {
+    dispatch({ type: "CLEAR_FILTERS" });
+  };
+
+
 
   // to sort the product
   useEffect(() => {
@@ -68,6 +75,7 @@ export const FilterContextProvider = ({ children }) => {
         setListView,
         sorting,
         updateFilterValue,
+        clearFilters,
       }}>
       {children}
     </FilterContext.Provider>
