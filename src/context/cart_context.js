@@ -3,18 +3,18 @@ import reducer from "../reducer/cartReducer";
 
 const CartContext = createContext();
 
-//const getLocalCartData = () => {
-  //let localCartData = localStorage.getItem("thapaCart");
- // if (localCartData === "") {
- //   return [];
- // } else {
-//    return JSON.parse(localCartData);
-//  }
-//};
+const getLocalCartData = () => {
+  let localCartData = localStorage.getItem("thapaCart");
+  if (localCartData === "thapaCart") {
+    return [];
+  } else {
+    return JSON.parse(localCartData);
+  }
+};
 
 const initialState = {
-   cart: [],
-  //cart: getLocalCartData(),
+  // cart: [],
+  cart: getLocalCartData(),
   total_item: "",
   total_price: "",
   shipping_fee: 50000,
@@ -51,9 +51,11 @@ const CartProvider = ({ children }) => {
   // get vs set
 
   useEffect(() => {
-    dispatch({ type: "CART_TOTAL_ITEM" });
-    dispatch({ type: "CART_TOTAL_PRICE" });
-    //localStorage.setItem("thapaCart", JSON.stringify(state.cart));
+    // dispatch({ type: "CART_TOTAL_ITEM" });
+    // dispatch({ type: "CART_TOTAL_PRICE" });
+    dispatch({ type: "CART_ITEM_PRICE_TOTAL" });
+
+    localStorage.setItem("thapaCart", JSON.stringify(state.cart));
   }, [state.cart]);
 
   return (
